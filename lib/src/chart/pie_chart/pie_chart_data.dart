@@ -212,7 +212,7 @@ class PieChartSectionData with EquatableMixin {
   /// Lerps a [PieChartSectionData] based on [t] value, check [Tween.lerp].
   static PieChartSectionData lerp(PieChartSectionData a, PieChartSectionData b, double t) {
     return PieChartSectionData(
-      gradient: Gradient.lerpTo(a.color, b.color, t),
+      gradient: Gradient.lerp(a.color, b.color, t),
       value: lerpDouble(a.value, b.value, t),
       color: Color.lerp(a.color, b.color, t),
       radius: lerpDouble(a.radius, b.radius, t),
